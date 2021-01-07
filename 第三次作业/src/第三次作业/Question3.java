@@ -1,0 +1,15 @@
+package 第三次作业;
+import java.util.Scanner;
+public class Question3 {
+	public static void main(String[] args) {
+		double side,area;
+		
+		System.out.print("Enter the side: ");
+		Scanner input = new Scanner(System.in);
+		side = input.nextDouble();
+		area = (6 * Math.pow(side, 2)) / (4 * Math.tan(Math.PI / 6));
+		
+		System.out.printf("The area of the hexagon is %.2f", area);
+		input.close();
+	}
+}
